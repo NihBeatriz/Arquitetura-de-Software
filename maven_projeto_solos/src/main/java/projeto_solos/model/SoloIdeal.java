@@ -8,7 +8,8 @@ public class SoloIdeal {
     private double magnesioIdeal;
     private double enxofreIdeal;
     private double aluminioIdeal;
-    private int texturaSolo;
+    private double hAlIdeal;
+    private String texturaSolo;
 
     public double getFosforoIdeal() {
         return fosforoIdeal;
@@ -55,77 +56,107 @@ public class SoloIdeal {
         this.aluminioIdeal = aluminioIdeal;
     }
 
-    public double getTexturaSolo() {
+    public double getHAlIdeal() {
+        return hAlIdeal;
+    }
+
+    public void setHAlIdeal(int hAlIdeal) {
+        this.hAlIdeal = hAlIdeal;
+    }
+
+    public String getTexturaSolo() {
         return texturaSolo;
     }
 
-    public void setTexturaSolo(int texturaSolo) {
+    public void setTexturaSolo(String texturaSolo) {
         this.texturaSolo = texturaSolo;
     }
 
-    public double fosforoIdeal(int texturaSolo) {
+    public double fosforoIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 9.0;
-            case 2:
+            case "2":
                 return 12.0;
             default:
                 return 0.0;
         }
     }
 
-    public double potassioIdeal(int texturaSolo) {
+    public double potassioIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 0.35;
-            case 2:
+            case "2":
                 return 0.25;
             default:
                 return 0.0;
         }
     }
 
-    public double calcioIdeal(int texturaSolo) {
+    public double calcioIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 6.0;
-            case 2:
+            case "2":
                 return 4.0;
             default:
                 return 0.0;
         }
     }
 
-    public double magnesioIdeal(int texturaSolo) {
+    public double magnesioIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 1.5;
-            case 2:
+            case "2":
                 return 1.0;
             default:
                 return 0.0;
         }
     }
 
-    public double enxofreIdeal(int texturaSolo) {
+    public double enxofreIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 9.0;
-            case 2:
+            case "2":
                 return 6.0;
             default:
                 return 0.0;
         }
     }
 
-    public double aluminioIdeal(int texturaSolo) {
+    public double aluminioIdeal(String texturaSolo) {
         switch(texturaSolo) {
-            case 1:
+            case "1":
                 return 0.0;
-            case 2:
+            case "2":
                 return 0.0;
             default:
                 return 0.0;
+        }
+    }
+
+    public double hAlIdeal(String texturaSolo) {
+        switch(texturaSolo) {
+            case "1":
+                return 0.0;
+            case "2":
+                return 0.0;
+            default:
+                return 0.0;
+        }
+    }
+
+    public void verificaSolo(String texturaSolo) {    
+        if(texturaSolo.equals("1")) {
+            System.out.println("\nSolo Argiloso\n");
+        } else if(texturaSolo.equals("2")) {
+            System.out.println("\nSolo Textura Média\n");
+        } else {
+            System.out.println("\nValor Inválido!");
+            System.exit(0);
         }
     }
 }
