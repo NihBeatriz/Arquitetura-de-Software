@@ -1,9 +1,5 @@
-package projeto-solos;
+package projeto_solos;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
