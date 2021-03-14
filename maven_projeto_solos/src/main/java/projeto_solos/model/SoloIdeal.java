@@ -2,76 +2,6 @@ package projeto_solos.model;
 
 public class SoloIdeal {
 
-    private double fosforoIdeal;
-    private double potassioIdeal;
-    private double calcioIdeal;
-    private double magnesioIdeal;
-    private double enxofreIdeal;
-    private double aluminioIdeal;
-    private double hAlIdeal;
-    private String texturaSolo;
-
-    public double getFosforoIdeal() {
-        return fosforoIdeal;
-    }
-
-    public void setFosforoIdeal(double fosforoIdeal) {
-        this.fosforoIdeal = fosforoIdeal;
-    }
-
-    public double getPotassioIdeal() {
-        return potassioIdeal;
-    }
-
-    public void setPotassioIdeal(double potassioIdeal) {
-        this.potassioIdeal = potassioIdeal;
-    }
-    public double getCalcioIdeal() {
-        return calcioIdeal;
-    }
-
-    public void setCalcioIdeal(double calcioIdeal) {
-        this.calcioIdeal = calcioIdeal;
-    }
-    public double getMagnesioIdeal() {
-        return magnesioIdeal;
-    }
-
-    public void setMagnesioIdeal(double magnesioIdeal) {
-        this.magnesioIdeal = magnesioIdeal;
-    }
-    public double getEnxofreIdeal() {
-        return enxofreIdeal;
-    }
-
-    public void setEnxofreIdeal(double enxofreIdeal) {
-        this.enxofreIdeal = enxofreIdeal;
-    }
-
-    public double getAluminioIdeal() {
-        return aluminioIdeal;
-    }
-
-    public void setAluminioIdeal(double aluminioIdeal) {
-        this.aluminioIdeal = aluminioIdeal;
-    }
-
-    public double getHAlIdeal() {
-        return hAlIdeal;
-    }
-
-    public void setHAlIdeal(int hAlIdeal) {
-        this.hAlIdeal = hAlIdeal;
-    }
-
-    public String getTexturaSolo() {
-        return texturaSolo;
-    }
-
-    public void setTexturaSolo(String texturaSolo) {
-        this.texturaSolo = texturaSolo;
-    }
-
     public double fosforoIdeal(String texturaSolo) {
         switch(texturaSolo) {
             case "1":
@@ -155,7 +85,7 @@ public class SoloIdeal {
         } else if(texturaSolo.equals("2")) {
             System.out.println("\nSolo Textura Média\n");
         } else {
-            System.out.println("\nValor Inválido!");
+            System.out.println("\nValor Inválido!\n");
             System.exit(0);
         }
     }
