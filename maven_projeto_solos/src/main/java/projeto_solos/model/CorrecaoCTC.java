@@ -1,3 +1,4 @@
+// Código desenvolvido com base na aula de Arquitetura de Software do professor Gabriel Costa Silva
 package projeto_solos.model;
 
 public class CorrecaoCTC {
