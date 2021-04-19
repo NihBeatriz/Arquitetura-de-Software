@@ -1,4 +1,4 @@
-package projeto_solos.model;
+package projeto_solos.enums;
 
 public enum FonteFosforo {
 

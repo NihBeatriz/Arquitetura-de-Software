@@ -3,7 +3,7 @@ package projeto_solos;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import projeto_solos.model.CorrecaoPotassio;
-import projeto_solos.model.FontePotassio;
+import projeto_solos.enums.FontePotassio;
 
 public class CorrecaoPotassioTeste {
     
@@ -40,25 +40,29 @@ public class CorrecaoPotassioTeste {
     @Test
     public void testaCalculoQuantidadeAplicarCP() {
         assertEquals(456.82, 
-            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, FontePotassio.CLORETO_DE_POTASSIO.valor()), 0.01);
+            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
+            FontePotassio.CLORETO_DE_POTASSIO.valor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarSP() {
         assertEquals(509.53, 
-            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, FontePotassio.SULFATO_DE_POTASSIO.valor()), 0.01);
+            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
+            FontePotassio.SULFATO_DE_POTASSIO.valor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarSPM() {
         assertEquals(1204.36, 
-            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, FontePotassio.SULFATO_DE_POTASSIO_E_MAGNESIO.valor()), 0.01);
+            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
+            FontePotassio.SULFATO_DE_POTASSIO_E_MAGNESIO.valor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarNP() {
         assertEquals(602.18, 
-            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, FontePotassio.NITRATO_DE_POTASSIO.valor()), 0.01);
+            new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
+            FontePotassio.NITRATO_DE_POTASSIO.valor()), 0.01);
     }
 
     @Test

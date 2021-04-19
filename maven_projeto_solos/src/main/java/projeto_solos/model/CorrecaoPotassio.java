@@ -34,7 +34,7 @@ public class CorrecaoPotassio {
         return calculoQuantidadeAplicar * 2.42;
     }
     
-    public double calculoCustoPorAlqueire(double precoFontePotassio, double calculoQuantidadeAplicarKgHaEmKgAlqueire){
+    public double calculoCustoPorAlqueire(double precoFontePotassio, double calculoQuantidadeAplicarKgHaEmKgAlqueire) {
         return ((precoFontePotassio * calculoQuantidadeAplicarKgHaEmKgAlqueire) / 1000) / 2.42;
     }
 }
