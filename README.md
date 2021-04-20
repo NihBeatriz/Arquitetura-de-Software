@@ -7,7 +7,7 @@ Resultado com o total de linhas do código utilizando o cloc:
 
 ![CLOCANTES](https://i.imgur.com/AMQqFjH.png)
 
-Após a reaftoração do código:
+Após a refatoração do código:
 
 ![CLOCANTES](https://i.imgur.com/pBlVUo1.png)
 
