@@ -41,28 +41,28 @@ public class CorrecaoPotassioTeste {
     public void testaCalculoQuantidadeAplicarCP() {
         assertEquals(456.82, 
             new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
-            FontePotassio.CLORETO_DE_POTASSIO.valor()), 0.01);
+            FontePotassio.CLORETO_DE_POTASSIO.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarSP() {
         assertEquals(509.53, 
             new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
-            FontePotassio.SULFATO_DE_POTASSIO.valor()), 0.01);
+            FontePotassio.SULFATO_DE_POTASSIO.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarSPM() {
         assertEquals(1204.36, 
             new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
-            FontePotassio.SULFATO_DE_POTASSIO_E_MAGNESIO.valor()), 0.01);
+            FontePotassio.SULFATO_DE_POTASSIO_E_MAGNESIO.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarNP() {
         assertEquals(602.18, 
             new CorrecaoPotassio().calculoQuantidadeAplicar(264.96, 
-            FontePotassio.NITRATO_DE_POTASSIO.valor()), 0.01);
+            FontePotassio.NITRATO_DE_POTASSIO.getValor()), 0.01);
     }
 
     @Test
