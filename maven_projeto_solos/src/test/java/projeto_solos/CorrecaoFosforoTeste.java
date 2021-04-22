@@ -29,83 +29,83 @@ public class CorrecaoFosforoTeste {
     public void testaCalculoQuantidadeAplicarSF() {
         assertEquals(123.95,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.SUPERFOSFATO_SIMPLES.valor()), 0.01);
+            FonteFosforo.SUPERFOSFATO_SIMPLES.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarST() {
         assertEquals(54.42,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.SUPERFOSFATO_TRIPLO.valor()), 0.01);
+            FonteFosforo.SUPERFOSFATO_TRIPLO.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarMAP() {
-        assertEquals(46.48,
+        assertEquals(46.48, 
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.MAP.valor()), 0.01);
+            FonteFosforo.MAP.getValor()), 0.1);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarDAP() {
         assertEquals(49.58,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.DAP.valor()), 0.01);
+            FonteFosforo.DAP.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarYoorin() {
         assertEquals(123.95,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.YOORIN.valor()), 0.01);
+            FonteFosforo.YOORIN.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarArad() {
         assertEquals(67.61,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.FOSFATO_ARAD.valor()), 0.01);
+            FonteFosforo.FOSFATO_ARAD.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarGafsa() {
         assertEquals(76.93,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.FOSFATO_GAFSA.valor()), 0.01);
+            FonteFosforo.FOSFATO_GAFSA.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarDaoui() {
         assertEquals(69.72,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.FOSFATO_DAOUI.valor()), 0.01);
+            FonteFosforo.FOSFATO_DAOUI.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarFPM() {
         assertEquals(92.96,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.FOFATO_PATOS_MINAS.valor()), 0.01);
+            FonteFosforo.FOFATO_PATOS_MINAS.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarET() {
         assertEquals(120.60,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.ESCORIA_DE_THOMAS.valor()), 0.01);
+            FonteFosforo.ESCORIA_DE_THOMAS.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarAF() {
         assertEquals(42.91,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.ACIDO_FOSFORICO.valor()), 0.01);
+            FonteFosforo.ACIDO_FOSFORICO.getValor()), 0.01);
     }
 
     @Test
     public void testaCalculoQuantidadeAplicarMM() {
         assertEquals(123.95,
             new CorrecaoFosforo().calculoQuantidadeAplicar(22.31, 
-            FonteFosforo.MULTIFOSFATO_MAGNESIANO.valor()), 0.01);
+            FonteFosforo.MULTIFOSFATO_MAGNESIANO.getValor()), 0.01);
     }
 }
