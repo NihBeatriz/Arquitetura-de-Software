@@ -21,4 +21,20 @@ public class CorrecaoFosforo {
     public double calculoQuantidadeAplicar(double calculoNecessidadeP2O5, double fonteFosforo) {
         return (calculoNecessidadeP2O5 * 100) / fonteFosforo;
     }
+
+    public double calculoQuantidadeAplicarKgHaEmKgAlqueire(double calculoQuantidadeAplicar) {
+        return calculoQuantidadeAplicar * 2.42;
+    }
+
+    public double calculoCustoPorHa(double custoFonteFosforo, double calculoQuantidadeAplicarKgHaEmKgAlqueire) {
+        return ((custoFonteFosforo * calculoQuantidadeAplicarKgHaEmKgAlqueire) / 1000) / 2.42;
+    }
+
+    public double calculoNutrientesAdicionais(double calculoQuantidadeAplicarKgHaEmKgAlqueire, double fonteFosforo) {
+        return (calculoQuantidadeAplicarKgHaEmKgAlqueire * fonteFosforo) / 2.42;
+    }
+
+    public double calculoNutrienteAdicionalMagnesio(double calculoQuantidadeAplicar) {
+        return calculoQuantidadeAplicar * 0.15;
+    }
 }
